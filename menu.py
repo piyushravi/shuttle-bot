@@ -30,7 +30,7 @@ def get_menu(message_text):
 		return_message += item + '\n'
 
 	# insert meal timings from the db
-	return_message += "\nMess timings for lunch are: {0}".format(timings)
+	return_message += "\nMess timings for {1} are: {0}".format(timings, meal_asked)
 
 	client.close()
 
